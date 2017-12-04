@@ -209,7 +209,7 @@ public class Notification extends CordovaPlugin {
                 dlg.setMessage(message);
                 dlg.setTitle(title);
                 dlg.setCancelable(false);
-				dlg.setCancelableOnTouchOutside(false);
+		dlg.setCancelableOnTouchOutside(false);
 
                 // First button
                 if (buttonLabels.length() > 0) {
