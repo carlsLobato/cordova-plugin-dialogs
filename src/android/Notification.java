@@ -208,7 +208,8 @@ public class Notification extends CordovaPlugin {
                 AlertDialog.Builder dlg = createDialog(cordova); // new AlertDialog.Builder(cordova.getActivity(), AlertDialog.THEME_DEVICE_DEFAULT_LIGHT);
                 dlg.setMessage(message);
                 dlg.setTitle(title);
-                dlg.setCancelable(true);
+                dlg.setCancelable(false);
+				dlg.setCancelableOnTouchOutside(false);
 
                 // First button
                 if (buttonLabels.length() > 0) {
